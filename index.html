@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            
+            justify-content: center;
+
+            
+        }
+        #slideContainer{
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            align-items: flex-start;
+        }
+
+        .picture { 
+            width: 100%;
+        }
+
+        .dot{
+            color: black;
+            background: transparent;
+            font-size: 30px;
+            display: inline-block;
+        }
+
+        #indicators{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="slideContainer">
+            <img src="/pics/filip-bunkens-R5SrmZPoO40-unsplash.jpg" alt="snowBridge" class="picture">
+            <img src="/pics/kenny-eliason-lJ6iASrFAnQ-unsplash.jpg" alt="balloon" class="picture">
+            <img src="/pics/mink-mingle-g0Qdolm3K14-unsplash.jpg" alt="beach1" class="picture">
+            <img src="/pics/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="beach2" class="picture">
+            <img src="/pics/willian-justen-de-vasconcellos-wwQ1T8AsLcA-unsplash.jpg" alt="snowForest" class="picture">
+        </div>
+        <div id="navButtons">
+            <ol id="indicators">
+                <li class="indicator"><</li>
+                <li class="indicator"><span class="dot">&#8226;</span></li>
+                <li class="indicator"><span class="dot">&#8226;</span></li>
+                <li class="indicator"><span class="dot">&#8226;</span></li>
+                <li class="indicator"><span class="dot">&#8226;</span></li>
+                <li class="indicator"><span class="dot">&#8226;</span></li>
+                <li class="indicator">></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
